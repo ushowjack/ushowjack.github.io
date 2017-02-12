@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-12T07:19:41.000Z</updated>
+  <updated>2017-02-12T07:24:06.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,13 +16,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>2017-02-12</title>
+    <title>对JavaScript对象的创建方式的理解</title>
     <link href="http://yoursite.com/2017/02/12/2017-02-12/"/>
     <id>http://yoursite.com/2017/02/12/2017-02-12/</id>
     <published>2017-02-12T07:15:48.000Z</published>
-    <updated>2017-02-12T07:19:41.000Z</updated>
+    <updated>2017-02-12T07:24:06.000Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="&#x5BF9;JavaScript&#x5BF9;&#x8C61;&#x7684;&#x521B;&#x5EFA;&#x65B9;&#x5F0F;&#x7684;&#x7406;&#x89E3;"><a href="#&#x5BF9;JavaScript&#x5BF9;&#x8C61;&#x7684;&#x521B;&#x5EFA;&#x65B9;&#x5F0F;&#x7684;&#x7406;&#x89E3;" class="headerlink" title="&#x5BF9;JavaScript&#x5BF9;&#x8C61;&#x7684;&#x521B;&#x5EFA;&#x65B9;&#x5F0F;&#x7684;&#x7406;&#x89E3;"></a>&#x5BF9;JavaScript&#x5BF9;&#x8C61;&#x7684;&#x521B;&#x5EFA;&#x65B9;&#x5F0F;&#x7684;&#x7406;&#x89E3;</h2><h3 id="JavaScript&#x5E38;&#x89C1;&#x7684;&#x521B;&#x5EFA;&#x65B9;&#x5F0F;&#x6709;"><a href="#JavaScript&#x5E38;&#x89C1;&#x7684;&#x521B;&#x5EFA;&#x65B9;&#x5F0F;&#x6709;" class="headerlink" title="JavaScript&#x5E38;&#x89C1;&#x7684;&#x521B;&#x5EFA;&#x65B9;&#x5F0F;&#x6709;:"></a>JavaScript&#x5E38;&#x89C1;&#x7684;&#x521B;&#x5EFA;&#x65B9;&#x5F0F;&#x6709;:</h3><blockquote>
+    <content type="html"><![CDATA[<h3 id="JavaScript&#x5E38;&#x89C1;&#x7684;&#x521B;&#x5EFA;&#x65B9;&#x5F0F;&#x6709;"><a href="#JavaScript&#x5E38;&#x89C1;&#x7684;&#x521B;&#x5EFA;&#x65B9;&#x5F0F;&#x6709;" class="headerlink" title="JavaScript&#x5E38;&#x89C1;&#x7684;&#x521B;&#x5EFA;&#x65B9;&#x5F0F;&#x6709;:"></a>JavaScript&#x5E38;&#x89C1;&#x7684;&#x521B;&#x5EFA;&#x65B9;&#x5F0F;&#x6709;:</h3><blockquote>
 <p>1.&#x5DE5;&#x5382;&#x6A21;&#x5F0F; 2.&#x6784;&#x9020;&#x51FD;&#x6570;&#x6A21;&#x5F0F; 3.&#x539F;&#x578B;&#x6A21;&#x5F0F; 4.&#x6DF7;&#x5408;&#x6784;&#x9020;&#x51FD;&#x6570;&#x548C;&#x539F;&#x578B;&#x6A21;&#x5F0F; 5.&#x52A8;&#x6001;&#x539F;&#x578B;&#x6A21;&#x5F0F;<br>6.&#x5BC4;&#x751F;&#x6784;&#x9020;&#x51FD;&#x6570;&#x6A21;&#x5F0F; 7.&#x7A33;&#x59A5;&#x6784;&#x9020;&#x51FD;&#x6570;&#x6A21;&#x5F0F;</p>
 </blockquote>
 <a id="more"></a>
@@ -57,7 +57,7 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;&amp;#x5BF9;JavaScript&amp;#x5BF9;&amp;#x8C61;&amp;#x7684;&amp;#x521B;&amp;#x5EFA;&amp;#x65B9;&amp;#x5F0F;&amp;#x7684;&amp;#x7406;&amp;#x89E3;&quot;&gt;&lt;a href=&quot;#&amp;#x5BF9;JavaScript&amp;#x5BF9;&amp;#x8C61;&amp;#x7684;&amp;#x521B;&amp;#x5EFA;&amp;#x65B9;&amp;#x5F0F;&amp;#x7684;&amp;#x7406;&amp;#x89E3;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x5BF9;JavaScript&amp;#x5BF9;&amp;#x8C61;&amp;#x7684;&amp;#x521B;&amp;#x5EFA;&amp;#x65B9;&amp;#x5F0F;&amp;#x7684;&amp;#x7406;&amp;#x89E3;&quot;&gt;&lt;/a&gt;&amp;#x5BF9;JavaScript&amp;#x5BF9;&amp;#x8C61;&amp;#x7684;&amp;#x521B;&amp;#x5EFA;&amp;#x65B9;&amp;#x5F0F;&amp;#x7684;&amp;#x7406;&amp;#x89E3;&lt;/h2&gt;&lt;h3 id=&quot;JavaScript&amp;#x5E38;&amp;#x89C1;&amp;#x7684;&amp;#x521B;&amp;#x5EFA;&amp;#x65B9;&amp;#x5F0F;&amp;#x6709;&quot;&gt;&lt;a href=&quot;#JavaScript&amp;#x5E38;&amp;#x89C1;&amp;#x7684;&amp;#x521B;&amp;#x5EFA;&amp;#x65B9;&amp;#x5F0F;&amp;#x6709;&quot; class=&quot;headerlink&quot; title=&quot;JavaScript&amp;#x5E38;&amp;#x89C1;&amp;#x7684;&amp;#x521B;&amp;#x5EFA;&amp;#x65B9;&amp;#x5F0F;&amp;#x6709;:&quot;&gt;&lt;/a&gt;JavaScript&amp;#x5E38;&amp;#x89C1;&amp;#x7684;&amp;#x521B;&amp;#x5EFA;&amp;#x65B9;&amp;#x5F0F;&amp;#x6709;:&lt;/h3&gt;&lt;blockquote&gt;
+      &lt;h3 id=&quot;JavaScript&amp;#x5E38;&amp;#x89C1;&amp;#x7684;&amp;#x521B;&amp;#x5EFA;&amp;#x65B9;&amp;#x5F0F;&amp;#x6709;&quot;&gt;&lt;a href=&quot;#JavaScript&amp;#x5E38;&amp;#x89C1;&amp;#x7684;&amp;#x521B;&amp;#x5EFA;&amp;#x65B9;&amp;#x5F0F;&amp;#x6709;&quot; class=&quot;headerlink&quot; title=&quot;JavaScript&amp;#x5E38;&amp;#x89C1;&amp;#x7684;&amp;#x521B;&amp;#x5EFA;&amp;#x65B9;&amp;#x5F0F;&amp;#x6709;:&quot;&gt;&lt;/a&gt;JavaScript&amp;#x5E38;&amp;#x89C1;&amp;#x7684;&amp;#x521B;&amp;#x5EFA;&amp;#x65B9;&amp;#x5F0F;&amp;#x6709;:&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;1.&amp;#x5DE5;&amp;#x5382;&amp;#x6A21;&amp;#x5F0F; 2.&amp;#x6784;&amp;#x9020;&amp;#x51FD;&amp;#x6570;&amp;#x6A21;&amp;#x5F0F; 3.&amp;#x539F;&amp;#x578B;&amp;#x6A21;&amp;#x5F0F; 4.&amp;#x6DF7;&amp;#x5408;&amp;#x6784;&amp;#x9020;&amp;#x51FD;&amp;#x6570;&amp;#x548C;&amp;#x539F;&amp;#x578B;&amp;#x6A21;&amp;#x5F0F; 5.&amp;#x52A8;&amp;#x6001;&amp;#x539F;&amp;#x578B;&amp;#x6A21;&amp;#x5F0F;&lt;br&gt;6.&amp;#x5BC4;&amp;#x751F;&amp;#x6784;&amp;#x9020;&amp;#x51FD;&amp;#x6570;&amp;#x6A21;&amp;#x5F0F; 7.&amp;#x7A33;&amp;#x59A5;&amp;#x6784;&amp;#x9020;&amp;#x51FD;&amp;#x6570;&amp;#x6A21;&amp;#x5F0F;&lt;/p&gt;
 &lt;/blockquote&gt;
     
@@ -478,7 +478,7 @@
 <li>JavaScript&#x548C;jQuery&#x7684;API&#x5728;&#x6DF7;&#x4E71;&#xFF0C;&#x5E38;&#x5E38;&#x5FD8;&#x4E86;&#x5230;&#x5E95;&#x662F;&#x54EA;&#x4E2A;&#x7684;&#xFF0C;&#x4E5F;&#x4F1A;&#x5FD8;&#x8BB0;&#x4E00;&#x4E9B;API&#x7684;&#x529F;&#x80FD;&#x5BFC;&#x81F4;&#x903B;&#x8F91;&#x5B9E;&#x73B0;&#x4E0A;&#x5B58;&#x5728;&#x56F0;&#x96BE;&#x3002;<br><br></li>
 </ol>
 <p>&#x4E8E;&#x662F;&#x4E4E;&#xFF0C;&#x6211;&#x60F3;&#x642D;&#x5EFA;&#x4E00;&#x4E2A;&#x5FAE;&#x535A;&#x3002;&#x6B63;&#x597D;&#x53EF;&#x4EE5;&#x7ED9;&#x6211;&#x5B66;&#x8FC7;&#x7684;&#x77E5;&#x8BC6;&#x70B9;&#xFF0C;&#x5728;&#x8FD1;&#x671F;&#x8BA4;&#x771F;&#x6574;&#x7406;&#x4E00;&#x4E0B;&#x6211;&#x7684;&#x7B14;&#x8BB0;&#x3002;&#x517B;&#x6210;&#x826F;&#x597D;&#x7684;&#x5B66;&#x4E60;&#x4E60;&#x60EF;&#xFF0C;&#x628A;&#x4E13;&#x7814;&#x7684;&#x6280;&#x5DE7;&#x653E;&#x5230;&#x5FAE;&#x535A;&#x4E0A;&#x6765;&#x3002;<br></p>
-<p>&#x4E00;&#x6765;&#x4E5F;&#x662F;&#x5BF9;&#x81EA;&#x5DF1;&#x6240;&#x5B66;&#x7684;&#x4E1C;&#x897F;&#x7684;&#x4E00;&#x4E2A;&#x590D;&#x4E60;&#xFF1B;&#x4E8C;&#x6765;&#x4E5F;&#x662F;&#x4E3A;&#x4EE5;&#x540E;&#x627E;&#x5DE5;&#x4F5C;&#x505A;&#x597D;&#x51C6;&#x5907;&#xFF1B;&#x4E09;&#x561B;&#x6211;&#x662F;&#x89C9;&#x5F97;&#x7F51;&#x4E0A;&#x5199;&#x7684;&#x597D;&#x591A;&#x6587;&#x7AE0;&#x5176;&#x5B9E;&#x53EA;&#x662F;&#x9002;&#x5408;&#x6709;&#x70B9;&#x5E95;&#x5B50;&#x7684;&#x770B;&#x7684;&#xFF0C;&#x5BF9;&#x6211;&#x800C;&#x8A00;&#x770B;&#x8D77;&#x6765;&#x8D39;&#x52B2;&#xFF0C;&#x6211;&#x5012;&#x662F;&#x60F3;&#x597D;&#x597D;&#x603B;&#x7ED3;&#x4E00;&#x756A;&#xFF0C;&#x4E5F;&#x8BA9;&#x540E;&#x6765;&#x8005;&#x8F7B;&#x677E;&#x4E00;&#x4E9B;&#x7F62;&#x4E86;&#x3002;<br><br><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;div&gt;</div><div class="line">	Hello World!</div><div class="line"><span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></div></pre></td></tr></table></figure></p>
+<p>&#x4E00;&#x6765;&#x4E5F;&#x662F;&#x5BF9;&#x81EA;&#x5DF1;&#x6240;&#x5B66;&#x7684;&#x4E1C;&#x897F;&#x7684;&#x4E00;&#x4E2A;&#x590D;&#x4E60;&#xFF1B;&#x4E8C;&#x6765;&#x4E5F;&#x662F;&#x4E3A;&#x4EE5;&#x540E;&#x627E;&#x5DE5;&#x4F5C;&#x505A;&#x597D;&#x51C6;&#x5907;&#xFF1B;&#x4E09;&#x561B;&#x6211;&#x662F;&#x89C9;&#x5F97;&#x7F51;&#x4E0A;&#x5199;&#x7684;&#x597D;&#x591A;&#x6587;&#x7AE0;&#x5176;&#x5B9E;&#x53EA;&#x662F;&#x9002;&#x5408;&#x6709;&#x70B9;&#x5E95;&#x5B50;&#x7684;&#x770B;&#x7684;&#xFF0C;&#x5BF9;&#x6211;&#x800C;&#x8A00;&#x770B;&#x8D77;&#x6765;&#x8D39;&#x52B2;&#xFF0C;&#x6211;&#x5012;&#x662F;&#x60F3;&#x597D;&#x597D;&#x603B;&#x7ED3;&#x4E00;&#x756A;&#xFF0C;&#x4E5F;&#x8BA9;&#x540E;&#x6765;&#x8005;&#x8F7B;&#x677E;&#x4E00;&#x4E9B;&#x7F62;&#x4E86;&#x3002;<br><br><br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">	Hello World!</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure></p>
 <p><img src="http://i.imgur.com/ymAlElU.jpg" alt="Hello World!"></p>
 ]]></content>
     
